@@ -1,4 +1,4 @@
-package com.tutorials.hp.masterdetailrecyclerview.mData;
+package com.tutorials.hp.masterdetailrecyclerview.ObjekWisata;
 
 /**
  * Created by Oclemy on 5/11/2016 for ProgrammingWizards Channel and http://www.camposha.com.

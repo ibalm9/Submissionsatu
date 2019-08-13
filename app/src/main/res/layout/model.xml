@@ -61,7 +61,7 @@
             android:text="Rating Bar of the city"
             android:layout_alignParentBottom="true"
             android:textColor="#707070"
-
+            android:id="@+id/tipee"
             android:paddingLeft="10dp"
             android:paddingBottom="20dp"
             android:layout_toRightOf="@id/spacecraftImage"></TextView>

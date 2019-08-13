@@ -1,4 +1,4 @@
-package com.tutorials.hp.masterdetailrecyclerview;
+package com.tutorials.hp.masterdetailrecyclerview.Aktivitas;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.tutorials.hp.masterdetailrecyclerview.mData.TempatWisataData;
-import com.tutorials.hp.masterdetailrecyclerview.mRecycler.MyAdapter;
+import com.tutorials.hp.masterdetailrecyclerview.ObjekWisata.TempatWisataData;
+import com.tutorials.hp.masterdetailrecyclerview.R;
+import com.tutorials.hp.masterdetailrecyclerview.RecyclerView.MyAdapter;
 
 
 public class MainActivity extends AppCompatActivity {

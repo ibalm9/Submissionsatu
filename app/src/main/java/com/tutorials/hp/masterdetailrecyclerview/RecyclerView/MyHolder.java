@@ -1,4 +1,4 @@
-package com.tutorials.hp.masterdetailrecyclerview.mRecycler;
+package com.tutorials.hp.masterdetailrecyclerview.RecyclerView;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,7 +12,7 @@ import com.tutorials.hp.masterdetailrecyclerview.R;
  */
 public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    TextView nameTxt;
+    TextView nameTxt, kotatxt, regiontxt, tipetxt;
     ImageView img;
     ItemClickListener itemClickListener;
 
@@ -20,6 +20,9 @@ public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickLis
         super(itemView);
 
         nameTxt= (TextView) itemView.findViewById(R.id.nameTxt);
+        kotatxt= (TextView) itemView.findViewById(R.id.citytex);
+        regiontxt= (TextView) itemView.findViewById(R.id.reg);
+        tipetxt= (TextView) itemView.findViewById(R.id.tipee);
         img= (ImageView) itemView.findViewById(R.id.spacecraftImage);
 
         itemView.setOnClickListener(this);

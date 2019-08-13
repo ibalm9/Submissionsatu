@@ -127,6 +127,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:textSize="12sp"
+
             android:fontFamily="sans-serif"
             android:textStyle="normal"
             android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia laborum. The most-loved of all Enterprise Republic Federation spacecraft, this has a recognition around the world.Its a model of Engineering ingenuinity. .... "
@@ -173,6 +174,7 @@
                 android:textSize="12sp"
                 android:paddingTop="10dp"
                 android:text="80"
+                android:id="@+id/reviewre"
                 android:paddingRight="4dp"
                 android:layout_toLeftOf="@id/reviewslabel"
                 ></TextView>
@@ -253,6 +255,7 @@
             android:layout_height="wrap_content"
             android:text="Jl Simaja Selatan no 79, Kesambi Cirebon"
             android:paddingLeft="34dp"
+
             android:id="@+id/address"></TextView>
         <TextView
             android:id="@+id/phonelabel"

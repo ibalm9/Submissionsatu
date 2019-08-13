@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-
+    android:layout_marginBottom="60dp"
 
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.tutorials.hp.masterdetailrecyclerview.MainActivity"
+    tools:context="com.tutorials.hp.masterdetailrecyclerview.Aktivitas.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <android.support.v7.widget.RecyclerView
