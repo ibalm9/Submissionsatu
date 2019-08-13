@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.tutorials.hp.masterdetailrecyclerview.R;
-import com.tutorials.hp.masterdetailrecyclerview.mData.SpaceCraft;
+import com.tutorials.hp.masterdetailrecyclerview.mData.TempatWisata;
 import com.tutorials.hp.masterdetailrecyclerview.mDetail.DetailActivity;
 
 import java.util.ArrayList;
@@ -20,11 +20,11 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     Context c;
-    ArrayList<SpaceCraft> spaceCrafts;
+    ArrayList<TempatWisata> tempatWisatas;
 
-    public MyAdapter(Context c, ArrayList<SpaceCraft> spaceCrafts) {
+    public MyAdapter(Context c, ArrayList<TempatWisata> tempatWisatas) {
         this.c = c;
-        this.spaceCrafts = spaceCrafts;
+        this.tempatWisatas = tempatWisatas;
     }
 
     @Override
@@ -35,8 +35,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     @Override
     public void onBindViewHolder(MyHolder holder, int position) {
-        final String name=spaceCrafts.get(position).getName();
-        final int image=spaceCrafts.get(position).getImage();
+        final String name= tempatWisatas.get(position).getName();
+        final int image= tempatWisatas.get(position).getImage();
 
         //BIND DATA
         holder.nameTxt.setText(name);
@@ -54,7 +54,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     @Override
     public int getItemCount() {
-        return spaceCrafts.size();
+        return tempatWisatas.size();
     }
 
     private void openDetailActivity(String name,int image)
