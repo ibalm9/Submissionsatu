@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeef"
+    android:orientation="vertical"
+    tools:context=".Aktivitas.ProfileActivity">
+
+     <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+         <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbarde"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="40dp"
+             android:background="@color/colorPrimary"
+             app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+     </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/foto"
+        android:src="@drawable/foto"
+        ></ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/foto"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="100dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="12dip"
+                android:padding="10dp"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foto"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corner"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/descDetailTxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Iqbal Maulana"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:text="Android Developer"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/indo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:text="Indonesia"
+                android:textColor="#707070"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="260"
+                    android:padding="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableBottom="@drawable/ic_thumb_up_black_24dp"
+                    android:textSize="16sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,908"
+                    android:drawableBottom="@drawable/ic_mode_comment_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:padding="20dp"
+                    android:textSize="16sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="673"
+                    android:padding="20dp"
+                    android:drawableBottom="@drawable/ic_favorite_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    ></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:id="@+id/laybot"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/rounded_corner"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="10dp"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/addresslabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:text="Address"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jl Simaja Selatan no 79, Kesambi Cirebon"
+            android:paddingLeft="34dp"
+            android:textColor="@color/colorAccent"
+
+
+            android:id="@+id/address"></TextView>
+        <TextView
+            android:id="@+id/phonelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+
+            android:text="Phone"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="082117414268"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="34dp"
+            android:id="@+id/phone"></TextView>
+        <TextView
+            android:id="@+id/Websitelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_public_black_24dp"
+
+            android:text="Website"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.Facebook.com/ibal.maulana9"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="34dp"
+            android:id="@+id/web"></TextView>
+        <TextView
+            android:id="@+id/emaillabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+
+
+            android:textStyle="normal"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ibalmaulana9@gmail.com"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="34dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/email"></TextView>
+        <TextView
+            android:id="@+id/prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+
+
+            android:textStyle="normal"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm a 20 year old student in Telkom University and live in PBB i12A, i work as android developer doing the mobile projects with the team. I have been leader in  many organization work and do the commitee for many events."
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="34dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/pro"></TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+
+
+            android:textStyle="normal"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14 August 2019 10:10 AM"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="34dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/da"></TextView>
+
+    </LinearLayout>
+    </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
